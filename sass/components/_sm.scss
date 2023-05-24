@@ -1,0 +1,45 @@
+.sm__list{
+    @extend %list;
+    @include centeredFlex();
+ }
+
+.sm__item:not(:last-child){
+    margin-right: 10px;
+
+}
+
+.sm__link {
+    @include centeredFlex();
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    color: $svg-color;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+        color: $white-back;
+        fill: $white-back;
+        background-color: $accent-color;
+
+    }
+
+}
+
+.sm__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.sm__link--background{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sm__icon--white{
+    fill: $white-back
+}
