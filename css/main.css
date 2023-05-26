@@ -264,17 +264,27 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
@@ -300,6 +310,12 @@ img {
 
 .examples {
   padding-top: 0;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .examples {
+    display: block;
+  }
 }
 
 .product__list, .filtr, .address__list, .client__list, .sm__list, .team__list, .examples__list, .advantages-list, .contacts, .main-nav__list {
@@ -330,85 +346,23 @@ img {
 .page-header {
   background-color: #FFFFFF;
   border-bottom: 1px solid #ECECEC;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: inline-block;
 }
 
 .main-nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 91px;
-}
-
-.main-nav__item:not(:last-child) {
-  margin-right: 51px;
-}
-
-.main-nav__link {
-  position: relative;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: #212121;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.main-nav__link:hover, .main-nav__link:focus {
-  color: #2196F3;
-}
-
-.main-nav__link--carent {
-  color: #2196F3;
-}
-.main-nav__link--carent::after {
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  bottom: 0;
-  display: block;
-  background-color: #2196F3;
-  content: "";
-  opacity: 1;
-  border-radius: 2px;
+  display: none;
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-.contacts__item:not(:last-child) {
-  margin-right: 30px;
+  display: none;
 }
 
 .contacts__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: #757575;
@@ -454,10 +408,9 @@ img {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  height: 400px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -465,6 +418,12 @@ img {
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img.jpeg");
   background-color: #2F303A;
   background-position: center;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+    height: 400px;
+  }
 }
 
 .hero__title {
@@ -478,7 +437,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .hero__button {
@@ -488,13 +446,13 @@ img {
 }
 
 .advantages-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.advantages-list__item:not(:last-child) {
-  margin-right: 30px;
+.advantages-list__item {
+  width: 100%;
 }
 
 .advantages-list__svg {
@@ -507,7 +465,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: #F5F4FA;
 }
@@ -525,6 +483,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages-list__text {
@@ -532,16 +491,6 @@ img {
   margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
-}
-
-.examples__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.examples__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .examples__item {
@@ -578,21 +527,15 @@ img {
   background-color: #F5F4FA;
 }
 
-.team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.team__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team__item {
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team__img {
+  width: 450px;
 }
 
 .team__description {
@@ -613,18 +556,6 @@ img {
 .team__position {
   margin-top: 0;
   margin-bottom: 16px;
-}
-
-.sm__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .sm__item:not(:last-child) {
@@ -672,16 +603,6 @@ img {
   fill: #FFFFFF;
 }
 
-.client__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.client__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .client__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -722,15 +643,6 @@ img {
   background-color: #2F303A;
 }
 
-.footer--horizontal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .address {
   margin-top: 20px;
   margin-right: 70px;
@@ -765,16 +677,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-}
-
-.footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-left: auto;
 }
 
 .footer-form__label {

@@ -11,19 +11,27 @@ img{
 }
 
 .container {
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 
     margin-left: auto;
     margin-right: auto;
 
+    @media screen and (min-width: $mobile) {
+        width: 480px
+    }
+
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $white-back;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .section__title {
@@ -52,4 +60,9 @@ img{
 
 .examples {
     padding-top: 0;
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: block;
+        
+    }
 }

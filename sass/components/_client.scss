@@ -1,10 +1,10 @@
 .client__list{
     @extend %list;
-    display: flex;
+//     display: flex;
 }
 
 .client__item:not(:last-child){
-    margin-right: 30px;
+    // margin-right: 30px;
 }
 
 .client__link {

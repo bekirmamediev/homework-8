@@ -1,6 +1,6 @@
 .sm__list{
     @extend %list;
-    @include centeredFlex();
+    // @include centeredFlex();
  }
 
 .sm__item:not(:last-child){

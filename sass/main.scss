@@ -1,8 +1,10 @@
 @import "./utils/vars.scss";
+@import "./utils/breakpoints";
 @import "./base/normalize.scss";
 @import "./base/base";
 @import "./utils/placeholders";
 @import "./utils/mixin";
+
 
 @import "./components/page_header";
 @import "./components/logo";
