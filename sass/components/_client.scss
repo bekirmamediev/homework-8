@@ -1,6 +1,9 @@
 .client__list{
     @extend %list;
-//     display: flex;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .client__item:not(:last-child){
@@ -10,8 +13,13 @@
 .client__link {
     @include centeredFlex();
 
-    width: 170px;
+    width: 210px;
     height: 92px;
+
+    @media screen and (min-width: $desktop) {
+        width: 170px;
+        
+    }
 
     color: $svg-color;
 

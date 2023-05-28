@@ -3,17 +3,27 @@
     padding-bottom: 60px;
     background-color: $footer-color;
 
+    max-width: 480px;
+
 }
 
 .footer--horizontal{
+    text-align: center;
     // display: flex;
     // align-items: baseline;
 
 }
 
 .address{
+
     margin-top: 20px;
-    margin-right: 70px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+    }
+    
 }
 
 .address__list{
@@ -45,7 +55,12 @@
 }
 
 .footer__text{
-    margin-top: 0;
+    margin-top: 60px;
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 0;
+        
+    }
     margin-bottom: 20px;
 
     color: $white-back;

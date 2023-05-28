@@ -9,7 +9,10 @@
 }
 
 .footer-form__input{
-    width: 358px;
+
+    width: 100%;
+
+    // width: 358px;
     margin-right: 12px;
 
     padding-top: 15px;
@@ -39,6 +42,8 @@
 
 .footer-form__button{
     @extend %button;
+
+    margin-top: 20px;
     position: relative;
     width: 200px;
     padding-left: 28px;
