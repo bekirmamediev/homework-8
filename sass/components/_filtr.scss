@@ -1,6 +1,12 @@
 .filtr{
     @extend %list;
-    @include centeredFlex();
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    @media screen and (min-width: $tablet) {
+        @include centeredFlex();
+    }
+    
     
 }
 

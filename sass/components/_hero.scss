@@ -7,6 +7,14 @@
     margin-right: auto;
     margin-left: auto;
 
+    @media screen and (min-width: $desktop) {
+            width: 100%;
+            height: 600px;
+            padding-bottom: 200px;
+            padding-top: 200px;
+    
+        }
+
     text-align: center;
 
     background-image: linear-gradient(to bottom,
@@ -15,6 +23,8 @@
         url('../images/hero-img.jpeg');    
     background-color: $footer-color;
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     
     
@@ -33,18 +43,25 @@
 
     max-width: 360px;
 
-    // max-width: 696px;
-    // font-size: 44px;
+    
 
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    // margin-bottom: 30px;
+
+
+    @media screen and (min-width:$desktop) {
+        max-width: 696px;
+        font-size: 44px;
+        margin-bottom: 30px;
+    }
+
+
 }
 
 .hero__button{
     @extend %button;
-    padding: 10px 32px;
     min-width: 216px;
+    padding: 10px 32px;
     text-align: center;
 }

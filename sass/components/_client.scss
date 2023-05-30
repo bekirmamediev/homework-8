@@ -1,19 +1,39 @@
 .client__list{
     @extend %list;
+    width: 100%;
 
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
 }
 
-.client__item:not(:last-child){
-    // margin-right: 30px;
+.client__item{
+    width: calc((100% - 30px)/2);
+    min-width: 170px;
+
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 60px)/3);
+        
+    }
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 150px)/6);
+        // width: 170px;
+    
+    }
+    margin-left: auto;
+    margin-right: auto;
 }
+
+// .client__item:not(:last-child){
+//     @media screen and (min-width: $desktop) {
+//         margin-right: 30px;
+//     }  
+// }
 
 .client__link {
     @include centeredFlex();
-
-    width: 210px;
+  
     height: 92px;
 
     @media screen and (min-width: $desktop) {

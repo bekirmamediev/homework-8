@@ -1,7 +1,9 @@
 .footer-form{
-    // display: flex;
-    // align-items: flex-end;
-    // margin-left: auto;
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: flex-end;
+        margin-left: auto;
+    }    
 }
 .footer-form__label{
     @extend .footer__text;
@@ -12,7 +14,14 @@
 
     width: 100%;
 
-    // width: 358px;
+    @media screen and (min-width: $tablet) {
+            width: 450px;
+        }
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+    }    
+
     margin-right: 12px;
 
     padding-top: 15px;

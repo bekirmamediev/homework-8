@@ -1,10 +1,15 @@
 .examples__list{
     @extend %list;
-    // display:flex;
+
+    @media screen and (min-width: $desktop) {
+        display:flex;
+    }
 }
 
 .examples__item:not(:last-child){
-    // margin-right: 30px;
+    @media screen and (min-width: $desktop) {
+        margin-right: 30px;
+    }
 }
 
 .examples__item{

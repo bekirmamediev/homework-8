@@ -1,6 +1,12 @@
 .product__list{
     @extend %list;
-    margin-top: 50px;
+    margin-top: 40px;
+    
+    @media screen and (min-width:$desktop) {
+        margin-top: 50px;
+        
+    }
+    
     
     display: flex;
     flex-wrap: wrap;
@@ -8,8 +14,17 @@
 }
 
 .product__item{
-    width: 370px;
+    width: 100%;
+    @media screen and (min-width:$tablet) {
+            width: calc((100% - 30px)/2);
+        }
+    @media screen and (min-width:$desktop) {
+        width: calc((100% - 60px)/3);
+    }
+    
 }
+
+    
 
 .product__title {
     color: $title-text-color;
@@ -38,6 +53,8 @@
     display: inline-block;
     text-decoration: none;
 
+    width: 100%;
+
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover, &:focus{
@@ -49,6 +66,7 @@
 .product__img {
     position: relative;
     overflow: hidden;
+    
 }
 
 .product__overlay {
@@ -92,4 +110,8 @@
         border-right: 1px solid $product-border-color;
         border-bottom: 1px solid $product-border-color;
         border-left: 1px solid $product-border-color;
+}
+
+.product_picture{
+    width: 100%;
 }
