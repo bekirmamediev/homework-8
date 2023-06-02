@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework-5</title>
+    <title>Homework-8</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
@@ -16,33 +16,57 @@
 
 <body>
 
-<header class="page-header">
-    <div class="container main-nav">
-        <nav class="main-nav">
-            <a href="/" class="logo"> <span class="logo--accent">Web</span>Studio</a>
-            <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link" href="./index.html">Студія</a></li>
-                <li class="main-nav__item"><a class="main-nav__link main-nav__link--carent" href="./portfolio.html">Портфоліо</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="">Контакти</a></li>
-            </ul>
-
-        </nav>
-
-        <ul class="contacts">
-            <li class="contacts__item"><a class="contacts__link" href="mailto:info@devstudio.com">
-                    <svg class="contacts__icon">
-                        <use href="./images/symbol.svg#icon-envelope"></use>
+    <header class="page-header">
+        <div class="container">
+            <div class="main-nav">
+                <a href="/" class="logo"> <span class="logo--accent">Web</span>Studio</a>
+                <button class="button-menu" type="button" data-menu-button>
+                    <svg width="40px" height="40px">
+                        <use class="button-menu__icon--menu" href="./images/symbol.svg#icon-menu_btm"></use>>
+                        <use class="button-menu__icon--close" href="./images/symbol.svg#icon-close_btm"></use>
                     </svg>
-                    info@devstudio.com</a></li>
-            <li class="contacts__item"><a class="contacts__link" href="tel:+380961111111">
-                    <svg class="contacts__icon contacts__icon--phone">
-                        <use href="./images/symbol.svg#icon-phone"></use>
-                    </svg>
-                    +38 096 111 11 11</a></li>
-        </ul>
-    </div>
-
-</header>
+                </button>
+                <div class="mobile-menu">
+                    <nav class="main-nav">
+                        <ul class="main-nav__list ">
+                            <li class="main-nav__item"><a class="main-nav__link"
+                                    href="./index.html">Студія</a>
+                            </li>
+                            <li class="main-nav__item"><a class="main-nav__link main-nav__link--carent" href="./portfolio.html">Портфоліо</a></li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="">Контакти</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="contacts">
+                        <li class="contacts__item"><a class="contacts__link" href="mailto:info@devstudio.com">
+                                <svg class="contacts__icon">
+                                    <use href="./images/symbol.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a></li>
+                        <li class="contacts__item"><a class="contacts__link contacts__link--phone" href="tel:+380961111111">
+                                <svg class="contacts__icon contacts__icon--phone">
+                                    <use href="./images/symbol.svg#icon-phone"></use>
+                                </svg>
+                                +38 096 111 11 11</a></li>
+                    </ul>
+                    <ul class="mobile-menu__social">
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__sm-link" href="">Instagram</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__sm-link" href="">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__sm-link" href="">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__sm-link" href="">Linkedin</a>
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main>
 
@@ -61,7 +85,11 @@
                 <li class="product__item" >
                     <a href="" class="product__link" >
                         <div class="product__img">
-                            <img class="product_picture" src="./images/example1.png" alt="приклад роботи" width="370">
+                            <picture>
+                                <source srcset="" media="max-width:767px">
+                                <source srcset="" media="max-width:1199px">
+                                <img class="product_picture" src="./images/example1.png" alt="приклад роботи" width="370">
+                            </picture>
                             <div class="product__overlay">
                                 <p class="product__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                                 відвідувачу отримати
@@ -80,7 +108,11 @@
                 <li class="product__item">
                     <a href="" class="product__link">
                         <div class="product__img">
-                            <img class="product_picture" src="./images/example2.png" alt="приклад роботи" width="370">
+                            <picture>
+                                <source srcset="" media="max-width:767px">
+                                <source srcset="" media="max-width:1199px">
+                                <img class="product_picture" src="./images/example2.png" alt="приклад роботи" width="370">
+                            </picture>    
                             <div class="product__overlay">
                                 <p class="product__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить
@@ -98,7 +130,11 @@
                 <li class="product__item">
                     <a href="" class="product__link">
                         <div class="product__img">
-                            <img class="product_picture" src="./images/example3.png" alt="приклад роботи" width="370">
+                            <picture>
+                                <source srcset="" media="max-width:767px">
+                                <source srcset="" media="max-width:1199px">
+                                <img class="product_picture" src="./images/example3.png" alt="приклад роботи" width="370">
+                            </picture>    
                             <div class="product__overlay">
                                 <p class="product__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
@@ -116,7 +152,11 @@
                 <li class="product__item">
                     <a href="" class="product__link">
                         <div class="product__img">
-                            <img class="product_picture" src="./images/example4.png" alt="приклад роботи" width="370">
+                            <picture>
+                                <source srcset="" media="max-width:767px">
+                                <source srcset="" media="max-width:1199px">
+                                <img class="product_picture" src="./images/example4.png" alt="приклад роботи" width="370">
+                            </picture>    
                             <div class="product__overlay">
                                 <p class="product__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
@@ -134,7 +174,11 @@
                 <li class="product__item">
                     <a href="" class="product__link">
                         <div class="product__img">
-                            <img class="product_picture" src="./images/example5.png" alt="приклад роботи" width="370">
+                            <picture>
+                                <source srcset="" media="max-width:767px">
+                                <source srcset="" media="max-width:1199px">
+                                <img class="product_picture" src="./images/example5.png" alt="приклад роботи" width="370">
+                            </picture>
                             <div class="product__overlay">
                                 <p class="product__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
@@ -152,7 +196,11 @@
                 <li class="product__item">
                     <a href="" class="product__link">
                         <div class="product__img">
-                            <img class="product_picture" src="./images/example6.png" alt="приклад роботи" width="370">
+                            <picture>
+                                <source srcset="" media="max-width:767px">
+                                <source srcset="" media="max-width:1199px">
+                                <img class="product_picture" src="./images/example6.png" alt="приклад роботи" width="370">
+                            </picture>
                             <div class="product__overlay">
                                 <p class="product__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
@@ -170,7 +218,11 @@
                 <li class="product__item">
                     <a href="" class="product__link">
                         <div class="product__img">
-                            <img class="product_picture" src="./images/example7.png" alt="приклад роботи" width="370">
+                            <picture>
+                                <source srcset="" media="max-width:767px">
+                                <source srcset="" media="max-width:1199px">
+                                <img class="product_picture" src="./images/example7.png" alt="приклад роботи" width="370">
+                            </picture>
                             <div class="product__overlay">
                                 <p class="product__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
@@ -188,7 +240,11 @@
                 <li class="product__item">
                     <a href="" class="product__link">
                         <div class="product__img">
-                            <img class="product_picture" src="./images/example8.png" alt="приклад роботи" width="370">
+                            <picture>
+                                <source srcset="" media="max-width:767px">
+                                <source srcset="" media="max-width:1199px">
+                                <img class="product_picture" src="./images/example8.png" alt="приклад роботи" width="370">
+                            </picture>
                             <div class="product__overlay">
                                 <p class="product__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
@@ -206,7 +262,11 @@
                 <li class="product__item">
                     <a href="" class="product__link">
                         <div class="product__img">
-                            <img class="product_picture" src="./images/example9.png" alt="приклад роботи" width="370">
+                            <picture>
+                                <source srcset="" media="max-width:767px">
+                                <source srcset="" media="max-width:1199px">
+                                <img class="product_picture" src="./images/example9.png" alt="приклад роботи" width="370">
+                            </picture>
                             <div class="product__overlay">
                                 <p class="product__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить
@@ -297,6 +357,6 @@
     </footer>
 
 
-
+<script src="./js/menu.js"></script>
 
 </body>

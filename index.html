@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework-7</title>
+    <title>Homework-8</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
@@ -17,31 +17,54 @@
 
 <body>
     <header class="page-header">
-        <div class="container main-nav">
-            <nav class="main-nav">
+        <div class="container">
+            <div class="main-nav">
                 <a href="/" class="logo"> <span class="logo--accent">Web</span>Studio</a>
-                <ul class="main-nav__list ">
-                    <li class="main-nav__item"><a class="main-nav__link main-nav__link--carent" href="./index.html">Студія</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="">Контакти</a></li>
-                </ul>
-
-            </nav>
-
-            <ul class="contacts">
-                <li class="contacts__item"><a class="contacts__link" href="mailto:info@devstudio.com">
-                        <svg class="contacts__icon">
-                            <use href="./images/symbol.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a></li>
-                <li class="contacts__item"><a class="contacts__link" href="tel:+380961111111">
-                        <svg class="contacts__icon contacts__icon--phone">
-                            <use href="./images/symbol.svg#icon-phone"></use>
-                        </svg>
-                        +38 096 111 11 11</a></li>
-            </ul>
+                <button class="button-menu" type="button" data-menu-button>
+                    <svg width="40px" height="40px">
+                        <use class="button-menu__icon--menu" href="./images/symbol.svg#icon-menu_btm"></use>>
+                        <use class="button-menu__icon--close" href="./images/symbol.svg#icon-close_btm"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu">
+                    <nav class="main-nav">
+                        <ul class="main-nav__list ">
+                            <li class="main-nav__item"><a class="main-nav__link main-nav__link--carent" href="./index.html">Студія</a>
+                            </li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="./portfolio.html">Портфоліо</a></li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="">Контакти</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="contacts">
+                        <li class="contacts__item"><a class="contacts__link" href="mailto:info@devstudio.com">
+                                <svg class="contacts__icon">
+                                    <use href="./images/symbol.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a></li>
+                        <li class="contacts__item"><a class="contacts__link contacts__link--phone" href="tel:+380961111111">
+                                <svg class="contacts__icon contacts__icon--phone">
+                                    <use href="./images/symbol.svg#icon-phone"></use>
+                                </svg>
+                                +38 096 111 11 11</a></li>
+                    </ul>
+                    <ul class="mobile-menu__social">
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__sm-link" href="">Instagram</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__sm-link" href="">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__sm-link" href="">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__sm-link" href="">Linkedin</a>
+                        </li>
+                
+                    </ul>
+                </div>
+            </div>
         </div>
-
     </header>
 
     <main>
@@ -128,7 +151,11 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team__list ">
                     <li class="team__item">
-                        <img class="team__img" src="./images/team_card1.jpeg" alt="фото члена комнади" width="270">
+                        <picture>
+                            <source srcset="" media="max-width:767px">
+                            <source srcset="" media="max-width:1199px">
+                            <img class="team__img" src="./images/team_card1.jpeg" alt="фото члена комнади" width="270">
+                        </picture>
                         <div class="team__description">
                             <h3 class="team__name">Ігор Дем'яненко</h3>
                             <p class="team__position">Product Designer</p>
@@ -157,7 +184,11 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class = "team__img" src="./images/team_card2.jpeg" alt="фото члена комнади" width="270">
+                        <picture>
+                            <source srcset="" media="max-width:767px">
+                            <source srcset="" media="max-width:1199px">
+                            <img class = "team__img" src="./images/team_card2.jpeg" alt="фото члена комнади" width="270">
+                        </picture>
                         <div class="team__description">
                             <h3 class="team__name">Ольга Рєпіна</h3>
                             <p class="team__position">Frontend Developer</p>
@@ -187,7 +218,12 @@
 
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/team_card3.jpeg" alt="фото члена комнади" width="270">
+                        <picture>
+                            <source srcset="" media="max-width:767px">
+                            <source srcset="" media="max-width:1199px">
+                            <img class="team__img" src="./images/team_card3.jpeg" alt="фото члена комнади" width="270">
+                        </picture>
+                        
                         <div class="team__description">
                             <h3 class="team__name">Микола Тарасов</h3>
                             <p class="team__position">Marketing</p>
@@ -216,7 +252,11 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/team_card4.jpeg" alt="фото члена комнади" width="270">
+                        <picture>
+                            <source srcset="" media="max-width:767px">
+                            <source srcset="" media="max-width:1199px">
+                            <img class="team__img" src="./images/team_card4.jpeg" alt="фото члена комнади" width="270">
+                        </picture>
                         <div class="team__description">
                             <h3 class="team__name">Михайло Єрмаков</h3>
                             <p class="team__position">UI Designer</p>
@@ -420,6 +460,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
 
 </body>
