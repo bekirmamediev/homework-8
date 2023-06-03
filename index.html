@@ -128,16 +128,16 @@
                 <h2 class="section__title">Чим ми займаємося</h2>
                 <ul class=" examples__list">
                     <li class="examples__item">
-                        <img src="./images/box1.jpeg" alt="приклад роботи" width="370">
+                        <img srcset="./images/box1.jpeg 1x, ./images/box1_2x.jpeg 2x" src="./images/box1.jpeg" alt="приклад роботи" width="370">
                         <p class="examples__thumb">Десктопні додатки</p>
 
                     </li>
                     <li class="examples__item">
-                        <img src="./images/box2.jpeg" alt="приклад роботи" width="370">
+                        <img srcset="./images/box2.jpeg 1x, ./images/box2_2x.jpeg 2x"  src="./images/box2.jpeg" alt="приклад роботи" width="370">
                         <p class="examples__thumb">Мобільні додатки</p>
                     </li>
                     <li class="examples__item">
-                        <img src="./images/box3.jpeg" alt="приклад роботи" width="370">
+                        <img srcset="./images/box3.jpeg 1x, ./images/box3_2x.jpeg 2x" src="./images/box3.jpeg" alt="приклад роботи" width="370">
                         <p class="examples__thumb">Дизайнерські рішення</p>
 
                     </li>
@@ -152,9 +152,10 @@
                 <ul class="team__list ">
                     <li class="team__item">
                         <picture>
-                            <source srcset="" media="max-width:767px">
-                            <source srcset="" media="max-width:1199px">
-                            <img class="team__img" src="./images/team_card1.jpeg" alt="фото члена комнади" width="270">
+                            <source srcset="./images/team1_450_1x.jpeg 1x, ./images/team1_450_2x.jpeg 2x " media="(max-width:767px)">
+                            <source srcset="./images/team1_354_1x.jpeg 1x, ./images/team1_354_2x.jpeg 2x" media="(max-width:1199px)">
+                            <source srcset="./images/team1_270_1x.jpeg 1x, ./images/team1_270_2x.jpeg 2x" media="(min-width:1200px)">
+                            <img class="team__img" src="./images/team1_270_1x.jpeg" alt="фото члена комнади">
                         </picture>
                         <div class="team__description">
                             <h3 class="team__name">Ігор Дем'яненко</h3>
@@ -185,10 +186,11 @@
                     </li>
                     <li class="team__item">
                         <picture>
-                            <source srcset="" media="max-width:767px">
-                            <source srcset="" media="max-width:1199px">
-                            <img class = "team__img" src="./images/team_card2.jpeg" alt="фото члена комнади" width="270">
-                        </picture>
+                            <source srcset="./images/team2_450_1x.jpeg 1x, ./images/team2_450_2x.jpeg 2x " media="(max-width:767px)">
+                            <source srcset="./images/team2_354_1x.jpeg 1x, ./images/team2_354_2x.jpeg 2x" media="(max-width:1199px)">
+                            <source srcset="./images/team2_270_1x.jpeg 1x, ./images/team2_270_2x.jpeg 2x" media="(min-width:1200px)">
+                            <img class="team__img" src="./images/team2_270_1x.jpeg" alt="фото члена комнади">
+                        </picture>                                                   
                         <div class="team__description">
                             <h3 class="team__name">Ольга Рєпіна</h3>
                             <p class="team__position">Frontend Developer</p>
@@ -219,9 +221,10 @@
                     </li>
                     <li class="team__item">
                         <picture>
-                            <source srcset="" media="max-width:767px">
-                            <source srcset="" media="max-width:1199px">
-                            <img class="team__img" src="./images/team_card3.jpeg" alt="фото члена комнади" width="270">
+                            <source srcset="./images/team3_450_1x.jpeg 1x, ./images/team3_450_2x.jpeg 2x " media="(max-width:767px)">
+                            <source srcset="./images/team3_354_1x.jpeg 1x, ./images/team3_354_2x.jpeg 2x" media="(max-width:1199px)">
+                            <source srcset="./images/team3_270_1x.jpeg 1x, ./images/team3_270_2x.jpeg 2x" media="(min-width:1200px)">
+                            <img class="team__img" src="./images/team3_270_1x.jpeg" alt="фото члена комнади">
                         </picture>
                         
                         <div class="team__description">
@@ -252,11 +255,12 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <picture>
-                            <source srcset="" media="max-width:767px">
-                            <source srcset="" media="max-width:1199px">
-                            <img class="team__img" src="./images/team_card4.jpeg" alt="фото члена комнади" width="270">
-                        </picture>
+                            <picture>
+                                <source srcset="./images/team4_450_1x.jpeg 1x, ./images/team4_450_2x.jpeg 2x " media="(max-width:767px)">
+                                <source srcset="./images/team4_354_1x.jpeg 1x, ./images/team4_354_2x.jpeg 2x" media="(max-width:1199px)">
+                                <source srcset="./images/team4_270_1x.jpeg 1x, ./images/team4_270_2x.jpeg 2x" media="(min-width:1200px)">
+                                <img class="team__img" src="./images/team4_270_1x.jpeg" alt="фото члена комнади">
+                            </picture>
                         <div class="team__description">
                             <h3 class="team__name">Михайло Єрмаков</h3>
                             <p class="team__position">UI Designer</p>
