@@ -363,6 +363,8 @@ img {
     padding: 0;
     border: none;
     background-color: transparent;
+    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .button-menu:hover, .button-menu:focus {
     fill: #2196F3;
@@ -396,13 +398,22 @@ img {
     display: none;
   }
   .button-menu.is-open + .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
-    min-height: 796px;
+    min-height: 100%;
     max-width: 480px;
     padding-top: 48px;
     padding-right: 40px;
@@ -493,11 +504,6 @@ img {
 
 .main-nav__list {
   display: block;
-}
-@media screen and (max-width: 767px) {
-  .main-nav__list {
-    margin-bottom: 302px;
-  }
 }
 @media screen and (min-width: 768px) {
   .main-nav__list {
@@ -818,6 +824,12 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .advantages-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .advantages-list__svg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -851,7 +863,11 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .advantages-list__title {
+    text-align: center;
+  }
 }
 
 .advantages-list__text {
@@ -1564,6 +1580,13 @@ img {
 
 .product__item {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .product__item {
@@ -1595,7 +1618,16 @@ img {
 }
 
 .product__link {
-  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-decoration: none;
   width: 100%;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1646,7 +1678,11 @@ img {
 }
 
 .product__meta {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
+  margin-bottom: auto;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;

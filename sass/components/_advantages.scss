@@ -27,11 +27,11 @@
     }
 }
 
-// .advantages-list__item:not(:last-child){
-//     @media screen and (min-width: $desktop) {
-//     margin-right: 30px;
-//     }
-// }
+.advantages-list__item:not(:last-child){
+    @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    }
+}
 
 .advantages-list__svg{
         @include centeredFlex();
@@ -60,8 +60,10 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-
-    text-align: center;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+    
 }
 
 .advantages-list__text{
