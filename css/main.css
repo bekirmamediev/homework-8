@@ -258,13 +258,15 @@ body {
   letter-spacing: 0.03em;
   background-color: #FFFFFF;
 }
+body .button-menu.is-open {
+  overflow: hidden;
+}
 
 img {
   display: block;
 }
 
 .container {
-  position: relative;
   max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
@@ -370,8 +372,8 @@ img {
     fill: #2196F3;
   }
   .button-menu.is-open {
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    top: 4%;
     right: 15px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -414,7 +416,6 @@ img {
             justify-content: space-between;
     width: 100%;
     min-height: 100%;
-    max-width: 480px;
     padding-top: 48px;
     padding-right: 40px;
     padding-left: 40px;
@@ -435,15 +436,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu__social {
@@ -459,6 +451,11 @@ img {
   letter-spacing: 0.02em;
   color: #2196F3;
   text-decoration: none;
+}
+@media screen and (max-width: 330px) {
+  .mobile-menu__sm-link {
+    font-size: 10px;
+  }
 }
 .mobile-menu__item:not(:last-child) .mobile-menu__sm-link {
   padding-right: 10px;
@@ -559,6 +556,11 @@ img {
     font-size: 40px;
   }
 }
+@media screen and (max-width: 250px) {
+  .main-nav__link {
+    font-size: 25px;
+  }
+}
 
 .main-nav__link--carent {
   color: #2196F3;
@@ -650,6 +652,11 @@ img {
     font-size: 24px;
   }
 }
+@media screen and (max-width: 304px) {
+  .contacts__link {
+    font-size: 18px;
+  }
+}
 @media screen and (min-width: 768px) {
   .contacts__link {
     display: -webkit-box;
@@ -675,6 +682,16 @@ img {
     font-size: 34px;
   }
 }
+@media screen and (max-width: 392px) {
+  .contacts__link--phone {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 304px) {
+  .contacts__link--phone {
+    font-size: 18px;
+  }
+}
 
 .contacts__icon {
   fill: currentColor;
@@ -691,6 +708,12 @@ img {
 .contacts__icon--phone {
   width: 10px;
   height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__contacts {
+    margin-left: auto;
+  }
 }
 
 .logo {

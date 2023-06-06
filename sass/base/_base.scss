@@ -4,6 +4,10 @@ body {
     letter-spacing: 0.03em;
     background-color: $white-back;
 
+    .button-menu.is-open{
+        overflow: hidden;
+    }
+
 }
 
 img{
@@ -11,7 +15,7 @@ img{
 }
 
 .container {
-    position: relative;
+    // position: relative;
     max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
