@@ -1699,6 +1699,27 @@ img {
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
+@media screen and (max-width: 440px) {
+  .product__description {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 335px) {
+  .product__description {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 264px) {
+  .product__description {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 8px;
+  }
+}
 
 .product__meta {
   -webkit-box-flex: 1;

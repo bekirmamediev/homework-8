@@ -110,6 +110,22 @@
     letter-spacing: 0.03em;
 
     color: $white-back;
+
+    @media screen and (max-width:440px) {
+        padding-top: 33px;
+        padding-bottom: 33px;
+        font-size: 14px;
+    }
+    @media screen and (max-width:335px) {
+        padding-top: 23px;
+        padding-bottom: 23px;
+        font-size: 11px;
+    }
+    @media screen and (max-width:264px) {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-size: 8px;
+    }
 }
 
 .product__meta{
